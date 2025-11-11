@@ -1,0 +1,9 @@
+[build]
+  command = "hugo --minify"          # 転送量削減のためminifyはONにする
+  publish = "public"                 # fugoはpublicフォルダにサイト一式を生成する
+
+[build.environment]
+  HUGO_VERSION = "0.152.2"           # Hugoのバージョン(ローカルと合わせる)
+  HUGO_ENABLEGITINFO = "false"       # gitの情報は使わないのでFalse
+  HUGO_ENV = "production"            # Blowfish 推奨
+  NODE_VERSION = "24"                # Nodeのバージョン(LTSな24を使用)
